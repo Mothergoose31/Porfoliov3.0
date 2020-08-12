@@ -10,6 +10,11 @@ import {Camera, Palette, Favorite} from '@material-ui/icons'
 //components
 import Header from '../src/components/Header/Header.jsx';
 import HeaderLinks from '../src/components/Header/HeaderLinks.jsx';
+import Parallax from '../src/components/Parallax/Parallax.jsx'
+
+import styles from '../src/styles/profilePageStyle.jsx'
+
+const useStyles = makeStyles(styles);
 
 function App() {
   
@@ -17,7 +22,7 @@ function App() {
     <div className="App">
       <Header
         color="transparent"
-        brand="Material Kit React"
+        brand="Joseph Alvarenga Beech"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
