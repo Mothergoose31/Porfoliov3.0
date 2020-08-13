@@ -11,6 +11,8 @@ import {Camera, Palette, Favorite} from '@material-ui/icons'
 import Header from '../src/components/Header/Header.jsx';
 import HeaderLinks from '../src/components/Header/HeaderLinks.jsx';
 import Parallax from '../src/components/Parallax/Parallax.jsx'
+import GridContainer from "../src/components/Grid/GridContainer.jsx"
+import GridItem from "../src/components/Grid/GridItem.jsx"
 
 import styles from '../src/styles/profilePageStyle.jsx'
 
