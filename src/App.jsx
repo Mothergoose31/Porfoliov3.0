@@ -75,6 +75,15 @@ function App(props) {
                 </div>
               </GridItem>
             </GridContainer>
+            <div className={classes.description}>
+              <p>
+              I'm fascinated with learning and exploring technological, socioeconomic, geopolitical, and environmental  trends.
+                To explorer and predict possibilities about the future. More precisely how stratification of
+                those trends will affect human well being. As we continue into the future technology will be an
+                ever increasing part of our lives. I love that through programming I can Bring Ideas to life
+                and while at it i enjoy maximizing ease of use and comfort  for the users..{" "}
+              </p>
+            </div>
           </div>
         </div>
       </div>
