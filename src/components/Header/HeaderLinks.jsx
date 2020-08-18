@@ -26,14 +26,7 @@ export default function HeaderLinks(props) {
     return (
         <List className={classes.list}>
             <ListItem className={classes.listItem}>
-                <Button
-                    href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
-                    color="transparent"
-                    target="_blank"
-                    className={classes.navLink}
-                >
-                <CloudDownload className={classes.icons} /> Download
-                </Button>
+            
             </ListItem>
             <ListItem className={classes.listItem}>
                 {/*<Tooltip title="Delete">
@@ -42,13 +35,28 @@ export default function HeaderLinks(props) {
                 </IconButton>
                 </Tooltip>*/}
                 <Tooltip
+                    id="linkedin"
+                    title="linkedin"
+                    placement={window.innerWidth > 959 ? "top" : "left"}
+                    classes={{ tooltip: classes.tooltip }}
+                >
+                <Button
+                        href="https://www.linkedin.com/in/joseph-beech/"
+                        target="_blank"
+                        color="transparent"
+                        className={classes.navLink}
+                    >
+                        <i class="fab fa-linkedin-in"></i>
+                    </Button>
+                </Tooltip>
+                <Tooltip
                     id="instagram-twitter"
-                    title="Follow us on twitter"
+                    title="Follow me on Twitter"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >
                     <Button
-                        href="https://twitter.com/CreativeTim?ref=creativetim"
+                        href="https://twitter.com/BeechNathaniel"
                         target="_blank"
                         color="transparent"
                         className={classes.navLink}
@@ -60,13 +68,13 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
                 <Tooltip
                     id="instagram-facebook"
-                    title="Follow us on facebook"
+                    title="Follow me on facebook"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >
                     <Button
                         color="transparent"
-                        href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                        href="https://www.facebook.com/joseph.alvarenga"
                         target="_blank"
                         className={classes.navLink}
                     >
@@ -77,13 +85,13 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
                 <Tooltip
                     id="instagram-tooltip"
-                    title="Follow us on instagram"
+                    title="Follow me on instagram"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >
                 <Button
                     color="transparent"
-                    href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+                    href="https://www.instagram.com/joseph_n.b/"
                     target="_blank"
                     className={classes.navLink}
                 >
