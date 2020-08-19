@@ -7,7 +7,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 import {Camera, Palette, Favorite} from '@material-ui/icons'
 
-import profile from '../src/images/profilePic.jpg'
+import profile from '../src/images/profpic2.jpg'
 
 //components
 import Header from '../src/components/Header/Header.jsx';
@@ -62,13 +62,30 @@ function App(props) {
                   <div className={classes.name}>
                     <h3 className={classes.title}>Joseph Alvarenga Beech</h3>
                     <h6>Full Stack Software engineer</h6>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.linkedin.com/in/joseph-beech/"
+                      target="_blank"
+                    >
+                      
+                      <i className={"fab fa-linkedin-in"} />
+                    </Button>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://twitter.com/BeechNathaniel"
+                      target="_blank"
+                    >
+                      
                       <i className={"fab fa-twitter"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.instagram.com/joseph_n.b/"
+                      target="_blank"
+                    >
                       <i className={"fab fa-instagram"} />
                     </Button>
-                    <Button justIcon link className={classes.margin5}>
+                    <Button justIcon link className={classes.margin5}
+                      href="https://www.facebook.com/joseph.alvarenga"
+                      target="_blank"
+                    >
                       <i className={"fab fa-facebook"} />
                     </Button>
                   </div>
