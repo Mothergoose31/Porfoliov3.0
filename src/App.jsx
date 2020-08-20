@@ -14,11 +14,16 @@ import Header from '../src/components/Header/Header.jsx';
 import HeaderLinks from '../src/components/Header/HeaderLinks.jsx';
 import Parallax from '../src/components/Parallax/Parallax.jsx'
 import GridContainer from "../src/components/Grid/GridContainer.jsx"
-import GridItem from "../src/components/Grid/GridItem.jsx"
-import Button from "../src/components/Button/Button.jsx"
-import backgroundImage from '../src/images/bg7.jpg'
+import GridItem from '../src/components/Grid/GridItem.jsx'
+import Button from '../src/components/Button/Button.jsx'
 
 import styles from '../src/styles/profilePageStyle.jsx'
+
+// pictures
+import LordOfRingsOthello from '../src/images/lordofringsothelloResize.png'
+import Nutrifacts from '../src/images/nutri-factsResize.png'
+import SafeHouse from  '../src/images/safe-houseResize.png'
+
 
 
 const useStyles = makeStyles(styles);
@@ -36,6 +41,7 @@ function App(props) {
     classes.imgRoundedCircle,
     classes.imgFluid
   );
+  const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     <div className="App">
       <Header
@@ -51,58 +57,79 @@ function App(props) {
       />
       <Parallax small filter image={require("../src/images/bg7.jpg")}/>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div>
-          <div ClassName={classes.container}>
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={6}>
-                <div className={classes.profile}>
-                  <div>
-                    <img src={profile} alt="..." className={imageClasses} />
-                  </div>
-                  <div className={classes.name}>
-                    <h3 className={classes.title}>Joseph Alvarenga Beech</h3>
-                    <h6>Full Stack Software engineer</h6>
-                    <Button justIcon link className={classes.margin5}
-                      href="https://www.linkedin.com/in/joseph-beech/"
-                      target="_blank"
-                    >
-                      
-                      <i className={"fab fa-linkedin-in"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}
-                      href="https://twitter.com/BeechNathaniel"
-                      target="_blank"
-                    >
-                      
-                      <i className={"fab fa-twitter"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}
-                      href="https://www.instagram.com/joseph_n.b/"
-                      target="_blank"
-                    >
-                      <i className={"fab fa-instagram"} />
-                    </Button>
-                    <Button justIcon link className={classes.margin5}
-                      href="https://www.facebook.com/joseph.alvarenga"
-                      target="_blank"
-                    >
-                      <i className={"fab fa-facebook"} />
-                    </Button>
-                  </div>
+        
+        <div ClassName={classes.container}>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={6}>
+              <div className={classes.profile}>
+                <div>
+                  <img src={profile} alt="..." className={imageClasses} />
                 </div>
-              </GridItem>
-            </GridContainer>
-            <div className={classes.description}>
-              <p>
-              I'm fascinated with learning and exploring technological, socioeconomic, geopolitical, and environmental  trends.
-                To explorer and predict possibilities about the future. More precisely how stratification of
-                those trends will affect human well being. As we continue into the future technology will be an
-                ever increasing part of our lives. I love that through programming I can Bring Ideas to life
-                and while at it i enjoy maximizing ease of use and comfort  for the users..{" "}
-              </p>
-            </div>
+                <div className={classes.name}>
+                  <h3 className={classes.title}>Joseph Alvarenga Beech</h3>
+                  <h6>Full Stack Software engineer</h6>
+                  <Button justIcon link className={classes.margin5}
+                    href="https://www.linkedin.com/in/joseph-beech/"
+                    target="_blank"
+                  >
+                    
+                    <i className={"fab fa-linkedin-in"} />
+                  </Button>
+                  <Button justIcon link className={classes.margin5}
+                    href="https://twitter.com/BeechNathaniel"
+                    target="_blank"
+                  >
+                    
+                    <i className={"fab fa-twitter"} />
+                  </Button>
+                  <Button justIcon link className={classes.margin5}
+                    href="https://www.instagram.com/joseph_n.b/"
+                    target="_blank"
+                  >
+                    <i className={"fab fa-instagram"} />
+                  </Button>
+                  <Button justIcon link className={classes.margin5}
+                    href="https://www.facebook.com/joseph.alvarenga"
+                    target="_blank"
+                  >
+                    <i className={"fab fa-facebook"} />
+                  </Button>
+                </div>
+              </div>
+            </GridItem>
+          </GridContainer>
+          <div className={classes.description}>
+            <p>
+            I'm fascinated with learning and exploring technological, socioeconomic, geopolitical, and environmental  trends.
+              To explorer and predict possibilities about the future. More precisely how stratification of
+              those trends will affect human well being. As we continue into the future technology will be an
+              ever increasing part of our lives. I love that through programming I can Bring Ideas to life
+              and while at it i enjoy maximizing ease of use and comfort  for the users..{" "}
+            </p>
           </div>
+          <GridContainer justify="center">
+            <GridItem xs={12} sm={12} md={4}>
+              <img
+                alt="an app to Check the nutritional content of foods , and meal logger"
+                src={Nutrifacts}
+                className={navImageClasses}
+              />
+              <img
+                alt="Lord of the Rings Theamed Othello Game"
+                src={LordOfRingsOthello}
+                className={navImageClasses}
+              />
+            </GridItem>
+            <GridItem xs={12} sm={12} md={4}>
+              <img
+                alt="Safe House, an app to check houses that are at risk of collapse in the seattle area"
+                src={SafeHouse}
+                className={navImageClasses}
+                />
+            </GridItem>
+          </GridContainer>
         </div>
+      
       </div>
     </div>
   );
