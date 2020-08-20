@@ -107,8 +107,16 @@ function App(props) {
               and while at it i enjoy maximizing ease of use and comfort  for the users..{" "}
             </p>
           </div>
+          <br/>
+          <div className={classes.profile}>
+            <h3 className={classes.title}>Projects</h3>
+          </div>
+          <br/>
+          <br/>
           <GridContainer justify="center">
+            
             <GridItem xs={12} sm={12} md={4}>
+            
               <img
                 alt="an app to Check the nutritional content of foods , and meal logger"
                 src={Nutrifacts}
