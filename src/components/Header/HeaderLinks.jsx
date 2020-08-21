@@ -51,7 +51,7 @@ export default function HeaderLinks(props) {
                 </Tooltip>
                 <Tooltip
                     id="instagram-twitter"
-                    title="Follow me on Twitter"
+                    title="Twitter"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >
@@ -68,7 +68,7 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
                 <Tooltip
                     id="instagram-facebook"
-                    title="Follow me on facebook"
+                    title="facebook"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >
@@ -85,7 +85,7 @@ export default function HeaderLinks(props) {
             <ListItem className={classes.listItem}>
                 <Tooltip
                     id="instagram-tooltip"
-                    title="Follow me on instagram"
+                    title="instagram"
                     placement={window.innerWidth > 959 ? "top" : "left"}
                     classes={{ tooltip: classes.tooltip }}
                 >

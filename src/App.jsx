@@ -16,6 +16,7 @@ import Parallax from '../src/components/Parallax/Parallax.jsx'
 import GridContainer from "../src/components/Grid/GridContainer.jsx"
 import GridItem from '../src/components/Grid/GridItem.jsx'
 import Button from '../src/components/Button/Button.jsx'
+import Tooltip from "@material-ui/core/Tooltip"
 
 import styles from '../src/styles/profilePageStyle.jsx'
 
@@ -116,24 +117,48 @@ function App(props) {
           <GridContainer justify="center">
             
             <GridItem xs={12} sm={12} md={4}>
-            
-              <img
-                alt="an app to Check the nutritional content of foods , and meal logger"
-                src={Nutrifacts}
-                className={navImageClasses}
-              />
-              <img
-                alt="Lord of the Rings Theamed Othello Game"
-                src={LordOfRingsOthello}
-                className={navImageClasses}
-              />
+            <Tooltip
+              title="Nutri-Facts, Nutritional contents checker, Meal Logger">
+                <Button
+                  color="transparent"
+                  href="https://nutri-facts.herokuapp.com/"
+                  target="_blank">
+                  <img
+                    alt="an app to Check the nutritional content of foods , and meal logger"
+                    src={Nutrifacts}
+                    className={navImageClasses}
+                  />
+                </Button>
+              </Tooltip>
+              <Tooltip
+              title="Lord of the Rings Theamed Othello ">
+                  <Button
+                  color="transparent"
+                  href="https://mothergoose31.github.io/OthelloV3/"
+                  target="_blank">
+                  <img
+                    alt="Lord of the Rings Theamed Othello Game"
+                    src={LordOfRingsOthello}
+                    className={navImageClasses}
+                  />
+                  </Button>
+              </Tooltip>
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
-              <img
-                alt="Safe House, an app to check houses that are at risk of collapse in the seattle area"
-                src={SafeHouse}
-                className={navImageClasses}
-                />
+              <Tooltip
+              title=" Check Earthquake Safety for houses in the Seattle Area">
+                <Button
+                  color="transparent"
+                  href="https://epic-shaw-f54583.netlify.com/"
+                  target="_blank">
+                  <img
+                    alt="Safe House, an app to check houses that are at risk of collapse in the seattle area"
+                    src={SafeHouse}
+                    className={navImageClasses}
+                  />
+                </Button>
+              </Tooltip>
+              
             </GridItem>
           </GridContainer>
         </div>
