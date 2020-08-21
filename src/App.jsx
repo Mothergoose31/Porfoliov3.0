@@ -5,7 +5,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 //icons
 
-import {Camera, Palette, Favorite} from '@material-ui/icons'
+
 
 import profile from '../src/images/profpic2.jpg'
 
