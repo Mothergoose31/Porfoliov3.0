@@ -56,7 +56,12 @@ function App(props) {
         }}
         {...rest}
       />
-      <Parallax small filter image={require("../src/images/bg7.jpg")}/>
+     
+      <Parallax small filter image={require("../src/images/background23.jpg")}/>
+      {/* <video autoplay muted loop id="myVideo">
+        <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
+      </video>
+       */}
       <div className={classNames(classes.main, classes.mainRaised)}>
         
         <div ClassName={classes.container}>
