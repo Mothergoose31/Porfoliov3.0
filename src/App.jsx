@@ -57,7 +57,7 @@ function App(props) {
         {...rest}
       />
      
-      <Parallax autoplay="true" playsinline="" loop="true" >
+      <Parallax  class="bg_video" autoplay="true" playsinline="" loop="true" >
       <video class="bg_video"  autoplay="true" playsinline="" loop="true" style={{display: "block"}} data-bm="42">
       <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
       </video>
