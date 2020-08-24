@@ -57,7 +57,11 @@ function App(props) {
         {...rest}
       />
      
-      <Parallax small filter image={require("../src/images/background23.jpg")}/>
+      <Parallax autoplay="true" playsinline="" loop="true" >
+      <video class="bg_video"  autoplay="true" playsinline="" loop="true" style={{display: "block"}} data-bm="42">
+      <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
+      </video>
+      </Parallax>
       {/* <video autoplay muted loop id="myVideo">
         <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
       </video>
