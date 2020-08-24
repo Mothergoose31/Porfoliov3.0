@@ -46,7 +46,7 @@ export default function HeaderLinks(props) {
                         color="transparent"
                         className={classes.navLink}
                     >
-                        <i class="fab fa-linkedin-in"></i>
+                        <i className="fab fa-linkedin-in"></i>
                     </Button>
                 </Tooltip>
                 <Tooltip

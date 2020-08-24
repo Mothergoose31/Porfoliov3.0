@@ -57,18 +57,15 @@ function App(props) {
         {...rest}
       />
      
-      <Parallax  class="bg_video" autoplay="true" playsinline="" loop="true" >
-      <video class="bg_video"  autoplay="true" playsinline="" loop="true" style={{display: "block"}} data-bm="42">
+      <Parallax  className='bg-video' autoPlay={true} playsInline="" loop={true} >
+      <video  className='bg-video' autoPlay={true} playsInline="" loop={true} style={{display: "block"}} data-bm="42">
       <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
       </video>
       </Parallax>
-      {/* <video autoplay muted loop id="myVideo">
-        <source src={require("../src/images/bg-video.mp4")} type="video/mp4" ></source>
-      </video>
-       */}
+      
       <div className={classNames(classes.main, classes.mainRaised)}>
         
-        <div ClassName={classes.container}>
+        <div className={classes.container}>
           <GridContainer justify="center">
             <GridItem xs={12} sm={12} md={6}>
               <div className={classes.profile}>
