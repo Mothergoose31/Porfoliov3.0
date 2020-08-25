@@ -110,8 +110,8 @@ function App(props) {
             I'm fascinated with learning and exploring technological, socioeconomic, geopolitical, and environmental  trends.
               To explorer and predict possibilities about the future. More precisely how stratification of
               those trends will affect human well being. As we continue into the future technology will be an
-              ever increasing part of our lives. I love that through programming I can Bring Ideas to life
-              and while at it i enjoy maximizing ease of use and comfort  for the users..{" "}
+              ever increasing part of our lives.  With Software development I love that through programming I can have the
+              thought for an Idea and bring it to life through code.
             </p>
           </div>
           <br/>
