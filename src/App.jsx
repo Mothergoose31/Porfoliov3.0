@@ -108,10 +108,10 @@ function App(props) {
           <div className={classes.description}>
             <p>
             I'm fascinated with learning and exploring technological, socioeconomic, geopolitical, and environmental  trends.
-              To explorer and predict possibilities about the future. More precisely how stratification of
+              To explorer and predict possibilities about the future. And how stratification of
               those trends will affect human well being. As we continue into the future technology will be an
-              ever increasing part of our lives.  With Software development I love that through programming I can have the
-              thought for an Idea and bring it to life through code.
+              ever increasing part of our lives.  I love that the programming I can make sense out of all this 
+              data and help me understand what's going on.
             </p>
           </div>
           <br/>
