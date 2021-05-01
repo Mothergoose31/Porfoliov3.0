@@ -24,6 +24,7 @@ import styles from '../src/styles/profilePageStyle.jsx'
 import LordOfRingsOthello from '../src/images/lordofringsothelloResize.png'
 import Nutrifacts from '../src/images/nutri-factsResize.png'
 import SafeHouse from  '../src/images/safe-houseResize.png'
+import Nfilter from '../src/images/nFilter.PNG'
 
 
 
@@ -152,7 +153,7 @@ function App(props) {
             </GridItem>
             <GridItem xs={12} sm={12} md={4}>
               <Tooltip
-              title=" Check Earthquake Safety for houses in the Seattle Area">
+              title="Safe-House">
                 <Button
                   color="transparent"
                   href="https://epic-shaw-f54583.netlify.com/"
@@ -164,8 +165,23 @@ function App(props) {
                   />
                 </Button>
               </Tooltip>
+              <Tooltip
+              title="National-Filter">
+                <Button
+                  color="transparent"
+                  href="https://national-filter.vercel.app/"
+                  target="_blank">
+                  <img
+                    alt="Safe House, an app to check houses that are at risk of collapse in the seattle area"
+                    src={Nfilter}
+                    className={navImageClasses}
+                  />
+                </Button>
+              </Tooltip>
               
             </GridItem>
+          
+            
           </GridContainer>
         </div>
       
