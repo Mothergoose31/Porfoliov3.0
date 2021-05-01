@@ -7,7 +7,7 @@ import {makeStyles} from '@material-ui/core/styles';
 
 
 
-import profile from '../src/images/profpic2.jpg'
+import profile from '../src/images/prof4.0.jpg';
 
 //components
 import Header from '../src/components/Header/Header.jsx';
